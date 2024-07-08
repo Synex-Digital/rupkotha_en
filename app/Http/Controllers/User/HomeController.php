@@ -47,7 +47,7 @@ class HomeController extends Controller
             OpenGraph::setDescription($seo->seo_description);  // define description
             OpenGraph::setType('website');
             OpenGraph::setUrl(url()->current()); // define url
-            OpenGraph::setSiteName($config ? $config->name : ''); //define site_name
+            OpenGraph::setSiteName($name); //define site_name
 
             //twitter
             TwitterCard::setUrl(url()->current()); // url of twitter card tag
@@ -142,7 +142,7 @@ class HomeController extends Controller
             OpenGraph::setDescription($categoryView->seo_description);  // define description
             OpenGraph::setType('website');
             OpenGraph::setUrl(url()->current()); // define url
-            OpenGraph::setSiteName($config->name); //define site_name
+            OpenGraph::setSiteName($name); //define site_name
 
             //twitter
             TwitterCard::setUrl(url()->current()); // url of twitter card tag

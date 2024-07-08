@@ -49,8 +49,8 @@
                         <div class="widget rounded">
                             <div class="widget-about data-bg-image text-center"
                                 data-bg-image="{{ asset('Themes/Theme1/images/map-bg.png') }}">
-                                <p class="mb-4 bd-font">মানুষ ম্যানেজমেন্ট ওয়েবসাইট ফ্লিপিং কি?ওয়েবসাইট ফ্লিপিং থেকে কেমন আয়
-                                    করা যায় মানুষ ম্যানেজমেন্ট ওয়েবসাইট ফ্লিপিং কি?ওয়েবসাইট ফ্লিপিং থেকে কেমন আয় করা যায়
+                                <p class="mb-4 bd-font">People Management What is Website Flipping? How to Earn from Website
+                                    Flipping People Management What is Website Flipping? How to Earn from Website Flipping
                                 </p>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                         <!-- widget categories -->
                         <div class="widget rounded bd-font">
                             <div class="widget-header text-center">
-                                <h3 class="widget-title">বিভাগ</h3>
+                                <h3 class="widget-title">Category</h3>
                                 <img src="{{ asset('Themes/Theme1/images/wave.svg') }}" class="wave" alt="wave" />
                             </div>
                             <div class="widget-content">
@@ -76,7 +76,7 @@
                         <!-- widget popular posts -->
                         <div class="widget rounded">
                             <div class="widget-header text-center">
-                                <h3 class="widget-title bd-font">চিরকাল বিখ্যাত</h3>
+                                <h3 class="widget-title bd-font">Popular</h3>
                                 <img src="{{ asset('Themes/Theme1/images/wave.svg') }}" class="wave" alt="wave" />
                             </div>
                             <div class="widget-content">
@@ -107,7 +107,7 @@
                         <!-- widget newsletter -->
                         <div class="widget rounded">
                             <div class="widget-header text-center">
-                                <h3 class="widget-title bd-font">সংযুক্ত থাকুন</h3>
+                                <h3 class="widget-title bd-font">Stay Connected</h3>
                                 <img src="{{ asset('Themes/Theme1/images/wave.svg') }}" class="wave" alt="wave" />
                             </div>
                             <div class="widget-content">

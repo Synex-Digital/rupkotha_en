@@ -167,9 +167,10 @@
                                             by <span class="text-uppercase fw-bolder">{{ $blog->author }}</span>
                                         </div>
                                         <div class="col-6 fw-bolder" style="text-align: end">
-                                            <p class="text-secondary"><span style="padding-right: 3px"><img
-                                                        src="{{ asset('Themes/Theme1/images/eyebig.svg') }}"
-                                                        alt="eyebig"></span>156 view</p>
+                                            <p class="text-secondary" style="display: flex;justify-content: flex-end;">
+                                                <img src="{{ asset('Themes/Theme1/images/eyebig.svg') }}"
+                                                    alt="">{{ $blog->view_count }} view
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -305,7 +306,7 @@
                                                         <p class="text-secondary"
                                                             style="display: flex;justify-content: flex-end;"><img
                                                                 src="{{ asset('Themes/Theme1/images/eyebig.svg') }}"
-                                                                alt="">156 view</p>
+                                                                alt="">{{ $blog->view_count }} view</p>
                                                     </div>
                                                 </div>
                                             </div>
