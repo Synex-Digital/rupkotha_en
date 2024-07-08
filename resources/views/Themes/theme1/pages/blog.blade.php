@@ -44,9 +44,10 @@
                     <div class="sidebar">
                         <!-- widget about -->
                         <div class="widget rounded">
-                            <div class="widget-about data-bg-image text-center" data-bg-image="images/map-bg.png">
-                                <img src="images/logo.svg" alt="logo" class="mb-4" />
-                                <p class="mb-4 bd-font">jjhfkdjghkfj hbjghdfsirhkjhfg hjhgjgjh
+                            <div class="widget-about data-bg-image text-center"
+                                data-bg-image="{{ asset('Themes/Theme1/images/map-bg.png') }}">
+                                <p class="mb-4 bd-font">People Management What is Website Flipping? How to Earn from Website
+                                    Flipping People Management What is Website Flipping? How to Earn from Website Flipping
                                 </p>
                             </div>
                         </div>
@@ -54,7 +55,7 @@
                         <!-- widget categories -->
                         <div class="widget rounded bd-font">
                             <div class="widget-header text-center">
-                                <h3 class="widget-title">বিভাগ</h3>
+                                <h3 class="widget-title">Category</h3>
                                 <img src="{{ asset('Themes/Theme1/images/wave.svg') }}" class="wave" alt="wave" />
                             </div>
                             <div class="widget-content">
@@ -72,7 +73,7 @@
                         <!-- widget popular posts -->
                         <div class="widget rounded">
                             <div class="widget-header text-center">
-                                <h3 class="widget-title bd-font">চিরকাল বিখ্যাত</h3>
+                                <h3 class="widget-title bd-font">Popular</h3>
                                 <img src="{{ asset('Themes/Theme1/images/wave.svg') }}" class="wave" alt="wave" />
                             </div>
                             <div class="widget-content">
@@ -103,7 +104,7 @@
                         <!-- widget newsletter -->
                         <div class="widget rounded">
                             <div class="widget-header text-center">
-                                <h3 class="widget-title bd-font">সংযুক্ত থাকুন</h3>
+                                <h3 class="widget-title bd-font">Stay Connected</h3>
                                 <img src="{{ asset('Themes/Theme1/images/wave.svg') }}" class="wave" alt="wave" />
                             </div>
                             <div class="widget-content">
@@ -134,10 +135,6 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <img
-                                                            src="{{ asset('dashboards/Theme1/images/config_pics/logo/1720078756.png') }}">
-                                                    </div>
-                                                    <div class="col">
                                                         <a href="{{ route('blog.view', $blog->slug) }}">
                                                             <h5 class="fw-bolder" style="color: #C60B0D !important;">
                                                                 {{ $blog->title }}</h5>
@@ -154,7 +151,7 @@
                                                         <p class="text-secondary"
                                                             style="display: flex;justify-content: flex-end;"><img
                                                                 src="{{ asset('Themes/Theme1/images/eyebig.svg') }}"
-                                                                alt="">156 view</p>
+                                                                alt="">{{ $blog->view_count }} view</p>
                                                     </div>
                                                 </div>
                                             </div>
