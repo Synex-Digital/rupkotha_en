@@ -188,7 +188,7 @@
                             const dateItem = document.createElement('li');
                             dateItem.className = 'list-inline-item';
                             dateItem.textContent = new Date(post.created_at)
-                                .toLocaleDateString('bn-BD', {
+                                .toLocaleDateString('en-US', {
                                     year: 'numeric',
                                     month: 'long',
                                     day: 'numeric'
