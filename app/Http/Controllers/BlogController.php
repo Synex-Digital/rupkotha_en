@@ -128,15 +128,16 @@ class BlogController extends Controller
         $blog->seo_description  = $request->seo_description;
         $blog->seo_tags         = $request->seo_tags;
         $blog->status           = $request->status;
-        $blog->slug             = $request->slug;
+        $blog->slug             = Str::slug($request->title, '-');
 
-        $oldImage = $blog->image;
-        if (file_exists($oldImage)) {
-            unlink($oldImage);
-            File::delete($oldImage);
-        }
 
         if ($request->has('image')) {
+            $oldImage = $blog->image;
+            if (file_exists($oldImage)) {
+                unlink($oldImage);
+                File::delete($oldImage);
+            }
+
             $blog->image = Self::upload($request);
         }
         $blog->save();

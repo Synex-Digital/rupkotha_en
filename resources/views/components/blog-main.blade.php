@@ -12,7 +12,7 @@
                     <h5 class="fw-bolder bd-font">{{ $blog->title }}</h5>
                 </a>
                 <p class="text-secondary mt-3">
-                    {{ $blog->seo_description }}
+                    {{ $blog->description() }}
                 </p>
             </div>
         </div>
