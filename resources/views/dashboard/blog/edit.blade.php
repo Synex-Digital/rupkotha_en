@@ -74,13 +74,14 @@
                                     <div class="col-sm-9">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="status" value="active"
-                                                checked>
+                                                {{ $blog->status == 'active' ? 'checked' : '' }}>
                                             <label class="form-check-label">
                                                 Active
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="status" value="inactive">
+                                            <input class="form-check-input" type="radio" name="status" value="inactive"
+                                                {{ $blog->status == 'inactive' ? 'checked' : '' }}>
                                             <label class="form-check-label">
                                                 Inactive
                                             </label>

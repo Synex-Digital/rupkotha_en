@@ -85,13 +85,13 @@ class HomeController extends Controller
         $category = Category::where('status', 'active')->get();
 
         //getting most view alltime blog
-        $best = Blog::orderBy('view_count', 'desc')->take(4)->get();
+        $best = Blog::where('status', 'active')->orderBy('view_count', 'desc')->take(4)->get();
 
         //Recent
-        $recent = Blog::orderBy('id', 'desc')->take(4)->get();
+        $recent = Blog::where('status', 'active')->orderBy('id', 'desc')->take(4)->get();
 
         //Banner post
-        $banner = Blog::orderBy('id', 'desc')->first();
+        $banner = Blog::where('status', 'active')->orderBy('id', 'desc')->first();
 
         return view('Themes.theme1.index', [
             'recent'    => $recent,
